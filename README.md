@@ -1,4 +1,4 @@
-NordInvasion Updater
+# Naozumi Updater
 
 Language: Python 2
 
