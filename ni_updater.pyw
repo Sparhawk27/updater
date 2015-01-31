@@ -193,9 +193,9 @@ class niUpdater:
 			hashfile = myloc + '\\hash.txt'
 
 			if (myloc.upper().endswith("MOUNTBLADE WARBAND\\MODULES")) or (myloc.endswith("MountBlade Warband/Modules/")):
-				if not os.path.exists(myloc + "\\NordInvasion"):
-					os.makedirs(myloc + "\\NordInvasion")
-				path = myloc + "\\NordInvasion\\"
+				if not os.path.exists(myloc + "\\Native"):
+					os.makedirs(myloc + "\\Native")
+				path = myloc + "\\Native\\"
 			else:
 				self.msg_folder(var)
 				return
@@ -310,25 +310,25 @@ class niUpdater:
 	def msg_error(self,var,error):
 		if l=="eng":
 			var.set("Error: " + error)
-			tkMessageBox.showerror("Error", error + "\n\nPlease contact a developer on IRC.")
+			tkMessageBox.showerror("Error", error + "\n\nPlease contact a developer on LeageofRevolution.com.")
 		elif l=="fre":
 			var.set("Error: " + error)
-			tkMessageBox.showerror("Erreur" "S.v.p contacter un développeur sur IRC.")
+			tkMessageBox.showerror("Erreur" "S.v.p contacter un développeur sur LeageofRevolution.com.")
 		elif l=="spa":
 			var.set("Error: " + error)
-			tkMessageBox.showerror("Error", error + "\n\nPóngase en contacto con un desarrollador en el IRC.")
+			tkMessageBox.showerror("Error", error + "\n\nPóngase en contacto con un desarrollador en el LeageofRevolution.com.")
 		elif l=="ger":
 			var.set("Error: " + error)
-			tkMessageBox.showerror("Error", error + "\n\nBitte kontaktieren Sie einen Developer auf IRC.")
+			tkMessageBox.showerror("Error", error + "\n\nBitte kontaktieren Sie einen Developer auf LeageofRevolution.com.")
 		elif l=="ita":
 			var.set("Error: " + error)
-			tkMessageBox.showerror("Errore", error + "\n\nSi prega di contattare uno sviluppatore su IRC.")
+			tkMessageBox.showerror("Errore", error + "\n\nSi prega di contattare uno sviluppatore su LeageofRevolution.com.")
 		elif l=="rus":
 			var.set("Error: " + error)
-			tkMessageBox.showerror("Ошибка", error + "\n\nContact Dev on IRC")
+			tkMessageBox.showerror("Ошибка", error + "\n\nContact Dev on LeageofRevolution.com")
 		elif l=="nor":
 			var.set("Error: " + error)
-			tkMessageBox.showerror("Error", error + "\n\nContact Dev on IRC")
+			tkMessageBox.showerror("Error", error + "\n\nContact Dev on LeageofRevolution.com")
 		root.update()
 
 	def msg_folder(self,var):
@@ -360,19 +360,19 @@ class niUpdater:
 
 	def button2Press(self):
 		if l=="eng":
-			tkMessageBox.showinfo("Nord Invasion Updater", "Welcome to the Nord Invasion updater.\n\nPlease place the updater in the Warband modules folder then hit OK. It will connect to the internet and download all required updates.\n\nFor questions contact Naozumi or NI Dev Team.")
+			tkMessageBox.showinfo("NeoGK Updater", "Welcome to the Nord Invasion updater.\n\nPlease place the updater in the Warband modules folder then hit OK. It will connect to the internet and download all required updates.\n\nFor questions contact Naozumi or NI Dev Team.")
 		elif l=="fre":
-			tkMessageBox.showinfo("Mise à jour de Nord Invasion", "Bienvenue à la mise à jour de Nord Invasion.\n\nS.v.p placer le logiciel de mise à jour dans le répertoire des modules de Warband et appuyer sur OK. Le logiciel se connectera à Internet et téléchargera les mise à jours nécessaire.\n\nPour des questions, contacter Naozumi ou l'équipe de développement de NI.")
+			tkMessageBox.showinfo("Mise à jour de NeoGK", "Bienvenue à la mise à jour de Nord Invasion.\n\nS.v.p placer le logiciel de mise à jour dans le répertoire des modules de Warband et appuyer sur OK. Le logiciel se connectera à Internet et téléchargera les mise à jours nécessaire.\n\nPour des questions, contacter Naozumi ou l'équipe de développement de NI.")
 		elif l=="spa":
-			tkMessageBox.showinfo("Nord invasión de actualización", "Bienvenido a nord invasión actualizador.\n\nPor favor coloque el actualizador en el partida de guerra módulos carpetas entonces presione ok.\n\nSe Va conectará a la Internet Y descargar todas las actualizaciones necesarias.\n\nPara preguntas contacto Naozumi Y  NI Dev Team.")
+			tkMessageBox.showinfo("NeoGK de actualización", "Bienvenido a nord invasión actualizador.\n\nPor favor coloque el actualizador en el partida de guerra módulos carpetas entonces presione ok.\n\nSe Va conectará a la Internet Y descargar todas las actualizaciones necesarias.\n\nPara preguntas contacto Naozumi Y  NI Dev Team.")
 		elif l=="ger":
-			tkMessageBox.showinfo("Nord Invasion Updater","Willkommen beim Nord - Invasion Updater. Bitte platzieren sie den Updater in das Verzeichnis des Warband Modules und bestätigen sie anschließend mit OK.\n\nDie benötigten Dateien werden daraufhin heruntergeladen.\n\nFür Fragen kontaktieren sie bitte Naozumi oder das Dev Team.")
+			tkMessageBox.showinfo("NeoGK Updater","Willkommen beim Nord - Invasion Updater. Bitte platzieren sie den Updater in das Verzeichnis des Warband Modules und bestätigen sie anschließend mit OK.\n\nDie benötigten Dateien werden daraufhin heruntergeladen.\n\nFür Fragen kontaktieren sie bitte Naozumi oder das Dev Team.")
 		elif l=="ita":
-			tkMessageBox.showinfo("Nord Invasion Updater","Benvenuti al Nord Invasion updater.\n\nSi prega di inserire il programma di aggiornamento nella cartella moduli Warband  poi premere OK.\n\nSi collegherà ad internet e scaricare tutti gli aggiornamenti necessari.\n\nPer domande contattare Naozumi o NI Dev Team")
+			tkMessageBox.showinfo("NeoGK Updater","Benvenuti al Nord Invasion updater.\n\nSi prega di inserire il programma di aggiornamento nella cartella moduli Warband  poi premere OK.\n\nSi collegherà ad internet e scaricare tutti gli aggiornamenti necessari.\n\nPer domande contattare Naozumi o NI Dev Team")
 		elif l=="rus":
-			tkMessageBox.showinfo("NordInvasion Updater","Добро пожаловать в NordInvasion updater.\n\nПожалуйста, переместите Updater в папку Warband Modules, затем нажмите Ок.\n\nПроизойдет подключение к интернету и обновление будет закачано.\n\nПо всем вопросам обращайтесь к Naozuni или к NI Dev Team.")
+			tkMessageBox.showinfo("NeoGK Updater","Добро пожаловать в NordInvasion updater.\n\nПожалуйста, переместите Updater в папку Warband Modules, затем нажмите Ок.\n\nПроизойдет подключение к интернету и обновление будет закачано.\n\nПо всем вопросам обращайтесь к Naozuni или к NI Dev Team.")
 		elif l=="nor":
-			tkMessageBox.showinfo("NordInvasion Updater","Velkommen til Nord Invasion Updater.\n\nVennligst plaser oppdatereren i Warband Modules mappen og trykk OK.\n\nDen vil koble til internet og laste ned alle de nødvendige oppdateringene.\n\nNoen spørsmål vennligst kontakt Naozumi eller NI Dev Team.")
+			tkMessageBox.showinfo("NeoGK Updater","Velkommen til Nord Invasion Updater.\n\nVennligst plaser oppdatereren i Warband Modules mappen og trykk OK.\n\nDen vil koble til internet og laste ned alle de nødvendige oppdateringene.\n\nNoen spørsmål vennligst kontakt Naozumi eller NI Dev Team.")
 		root.update()
 
 	def setLanguage(self, language, var):
@@ -381,7 +381,7 @@ class niUpdater:
 		self.msg_ready(var)
 
 
-logging.basicConfig(filename='ni_updater.log',level=logging.DEBUG)
+logging.basicConfig(filename='NeoGK_updater.log',level=logging.DEBUG)
 l        = "eng"
 curNum   = 0
 totNum   = 0
@@ -390,11 +390,11 @@ pathname = os.path.dirname(sys.argv[0])
 myloc    = os.path.abspath(pathname)
 webloc   = ""
 #Hostname
-webloc1  = "http://www.hostname.com/mod/"
+webloc1  = "https://www.dropbox.com/s/p01cdzq26o2dqfe/Quick.zip?dl=0"
 webfolder = ""
 #Updater Version Number
 myVersion  = 1.3
 root     = Tk()
 niup     = niUpdater(root)
-root.wm_title("Nord Invasion Updater")
+root.wm_title("NeoGK Updater")
 root.mainloop()
